@@ -1,0 +1,81 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# VS Code settings
+.vscode/
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy cache
+.mypy_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+
+# Logs
+*.log
+
+# MacOS
+.DS_Store
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Local data
+*.sqlite3
+
+# Secret files
+*.secret
+
+# Misc
+*.swp
+*.swo
+
+# Ignore output files
+output/
+
+# Ignore Jupyter runtime
+.jupyter/
+
+# Ignore pip wheel
+*.whl
+
+# Ignore test results
+*.out
+
+# Ignore compiled Cython files
+*.c
+*.cpp
+*.pyd
+
+# Ignore language server
+.pyright/
+
+# Ignore backup files
+*~
+
+# Ignore requirements lock files
+poetry.lock
+Pipfile.lock
