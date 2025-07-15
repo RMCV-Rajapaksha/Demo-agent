@@ -10,8 +10,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-# Set your OpenAI API key
-# os.environ["OPENAI_API_KEY"] = "your-api-key-here"
 
 # Initialize the model
 model = ChatOpenAI(model="gpt-4o", temperature=0)
@@ -306,4 +304,5 @@ if __name__ == "__main__":
     print("3. Uncomment the run_demo() call below")
     print("4. Run the script")
     
+
     run_demo()
