@@ -90,7 +90,7 @@ def agent_2(state: MessagesState) -> Command[Literal["supervisor"]]:
     messages = state.get("messages", [])
     user_request = messages[0] if messages else ""
     
-    print("😄 JOKE AGENT: Using LLM to create a joke...")
+    print("JOKE AGENT: Using LLM to create a joke...")
     
     # Use LLM for jokes
     joke_prompt = f"""
@@ -102,7 +102,7 @@ def agent_2(state: MessagesState) -> Command[Literal["supervisor"]]:
     
     response = model.invoke([SystemMessage(content=joke_prompt)])
     
-    print(f"😄 JOKE AGENT: {response.content}")
+    print(f"JOKE AGENT: {response.content}")
     
     return Command(
         goto="supervisor",

@@ -149,33 +149,3 @@ if __name__ == "__main__":
     # Run the demo
     demo_supervisor()
 
-"""
-How it works:
-=============
-
-1. **Supervisor Agent**: Uses create_react_agent() with a tool-calling LLM
-   - Analyzes user input
-   - Decides which specialist agent to call
-   - Routes the request appropriately
-
-2. **Specialist Agents**: Each agent has a specific domain
-   - math_agent: Handles mathematical calculations
-   - writing_agent: Helps with writing tasks
-   - research_agent: Provides research and general information
-
-3. **Tool-Calling Pattern**: 
-   - User query → Supervisor → Agent selection → Specialized response
-   - The supervisor acts as a router/coordinator
-   - Each agent receives the full state via InjectedState
-
-4. **State Management**:
-   - State contains conversation history
-   - Agents can access previous messages
-   - Responses are automatically converted to ToolMessages
-
-Key Benefits:
-- Modular design with specialized agents
-- Automatic routing based on content
-- Scalable architecture for adding more agents
-- Built-in state management and message handling
-"""
